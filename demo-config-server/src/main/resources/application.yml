@@ -13,5 +13,7 @@ spring:
           password: sfcy215211314,.
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8011/eureka/
+#    serviceUrl:
+#      defaultZone: http://localhost:8011/eureka/

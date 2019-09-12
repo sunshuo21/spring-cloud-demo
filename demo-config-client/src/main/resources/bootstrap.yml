@@ -11,5 +11,5 @@ spring:
         service-id: demo-config-server
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8011/eureka/
