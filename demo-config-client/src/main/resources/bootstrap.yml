@@ -9,6 +9,10 @@ spring:
       discovery:
         enabled: true
         service-id: demo-config-server
+    # 开启消息跟踪
+    bus:
+      trace:
+        enabled: true
 eureka:
   client:
     service-url:

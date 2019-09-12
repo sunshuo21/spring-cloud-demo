@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8800
 spring:
   application:
     name: demo-config-server
@@ -11,9 +11,20 @@ spring:
           search-paths: document/config-repo
           username: 15811543437@163.com
           password: sfcy215211314,.
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 192.168.75.224
+    port: 5672
+    username: admin
+    password: fengzi21
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8011/eureka/
-#    serviceUrl:
-#      defaultZone: http://localhost:8011/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
