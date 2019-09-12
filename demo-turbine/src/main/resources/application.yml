@@ -1,0 +1,14 @@
+server:
+  port: 8012
+spring:
+  application:
+    name: demo-turbine
+turbine:
+  appConfig: node1, node2
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8011/eureka/
