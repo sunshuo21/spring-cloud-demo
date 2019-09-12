@@ -1,9 +1,10 @@
+
 server:
-  port: 9000
+  port: 8020
 spring:
   application:
-    name: demo-producer
+    name: demo-zuul
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8011/eureka/

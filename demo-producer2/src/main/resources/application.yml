@@ -2,7 +2,7 @@ server:
   port: 9010
 spring:
   application:
-    name: demo-provider
+    name: demo-producer
 eureka:
   client:
     serviceUrl:
